@@ -4,22 +4,17 @@
   "editor.formatOnSave": true,
   "editor.fontSize": 18,
   "extensions.ignoreRecommendations": true,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "bash",
   "window.restoreWindows": "preserve",
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-  "editor.defaultFormatter": "ms-python.black-formatter"
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "python.defaultInterpreterPath": "/usr/bin/python3",
   "workbench.colorTheme": "Dark+",
   "workbench.iconTheme": "vscode-icons",
-  "github.copilot.enable": {
-    "python": false,
-    "html": false,
-    "css": false,
-    "SQL": false
-  },
-  "chat.agent.enabled": false
+  "chat.agent.enabled": true
 }

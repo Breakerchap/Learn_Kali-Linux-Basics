@@ -1,3 +1,11 @@
-Flask
-bcrypt
-flask_wtf
+# Python packages used in the Cyber Security lab exercises.
+# Kept deliberately small so the environment stays fast to build.
+
+# Make simple HTTP requests from your own Python scripts (web recon labs).
+requests
+
+# Friendly, colourful terminal output for student scripts.
+rich
+
+# Validate that every command taught in the lessons works in this codespace.
+pytest

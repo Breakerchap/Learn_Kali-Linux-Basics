@@ -1,0 +1,649 @@
+<html lang="en">
+  <head>
+    <title>PECAN+</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="PECAN+ CTF Website: Australian high schools annual Capture The Flag competition, organised by Edith Cowan University."
+    />
+    <meta name="author" content="PECAN+ CTF @ ECU" />
+    <meta name="generator" content="PECAN+ CTF @ ECU" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://practice.pecanplus.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PECAN+ CTF" />
+    <meta
+      property="og:description"
+      content="PECAN+ CTF Website: Australian high schools annual Capture The Flag competition, organised by Edith Cowan University."
+    />
+    <meta
+      property="og:image"
+      content="https://practice.pecanplus.org/images/pecan-og.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="practice.pecanplus.org" />
+    <meta property="twitter:url" content="https://practice.pecanplus.org" />
+    <meta name="twitter:title" content="PECAN+ CTF" />
+    <meta
+      name="twitter:description"
+      content="PECAN+ CTF Website: Australian high schools annual Capture The Flag competition, organised by Edith Cowan University."
+    />
+    <meta
+      name="twitter:image"
+      content="https://practice.pecanplus.org/images/pecan-og.jpg"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      /* Additional styles
+-------------------------------------------------- */
+      /* Center align the text within the three columns */
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      /* rtl:begin:ignore */
+      .marketing .col-lg-4 p {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+      }
+
+      /*************** Challenges Page ********************/
+
+      .diff {
+        font-size: 1em;
+      }
+
+      .credit {
+        margin: 0 0 1em 0;
+        font-weight: bold;
+      }
+      .level-1 i:nth-child(odd) {
+        display: none;
+      }
+      .level-2 i:nth-child(even) {
+        display: none;
+      }
+
+      .challengeimage {
+        width: 100%;
+        margin: 0 0 1em 0;
+      }
+
+      .challengeimage img {
+        width: 100%;
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        border-radius: 1em;
+      }
+    </style>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1304.0" data-gr-ext-installed="">
+    <main>
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          <header class="d-flex justify-content-center py-3 text-bg-dark">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/"
+                  class="nav-link text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/about.html"
+                  class="nav-link text-white"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/register.html"
+                  class="nav-link text-white"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/results.html"
+                  class="nav-link text-white"
+                  >Results</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/sponsors.html"
+                  class="nav-link text-white"
+                  >Sponsors</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/sponsorship.html"
+                  class="nav-link text-white"
+                  >Sponsorship</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="?page=challenges" class="nav-link active"
+                  >Practice challenges</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://pecanplus.org/contact.html"
+                  class="nav-link text-white"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </header>
+        </div>
+      </header>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-12">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Practice challenges</h1>
+            <p class="lead">
+              PECAN+ CTF is a Capture The Flag (CTF) style of cyber security
+              competition. Use the links below to explore our archive of
+              practice challenges.
+            </p>
+            <p>
+              These challenges are free to use and are intended to give
+              competitors a taste of the style and complexity of our CTF.
+              Challenges can be used to gauge the best level to enter the PECAN+
+              CTF competition at.
+              <b>For a handy guide to deciding on competition divisions</b> see
+              <a href="https://pecanplus.org/assets/DivisionDecisionGuide.pdf"
+                >here</a
+              >.
+            </p>
+            <p>
+              <a
+                href="mailto:k.price@ecu.edu.au?subject=PECAN+ challenge walkthroughs"
+                >Contact us</a
+              >
+              for access to our challenge walkthroughs (updated 2025).
+            </p>
+            <p>
+              <b>Challenge instructions:</b> The objective of our CTF is to
+              solve challenges, across a range of cyber security categories, by
+              correctly uncovering a digital "flag" (string of text). Unless
+              otherwise indicated, the PECAN+ CTF flag format is:
+              pecan{correct_flag_here}
+            </p>
+          </div>
+        </div>
+
+        <h3>PECAN+ Challenge Coin</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">2022 Challenge Coin</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">
+                  PECAN+ 2023 may be over, but this is still a fun challenge!
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=coin-2022"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">2023 Challenge Coin</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">
+                  PECAN+ 2024 may be over, but this is still a fun challenge!
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=coin-2023"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">2024 Challenge Coin</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">
+                  PECAN+ 2025 may be over, but this is still a fun challenge!
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=coin-2024"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">Cryptography</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Encoded</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  Decoding an ELF binary (encoding not crypto)...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=encoded"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Take note</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">Time for a little night music...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=takenote"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">Climbing</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">Ascend this challenge...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=climbing"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">Forensics</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">3D flag</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">This flag is in 3 dimensions...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=3dflag"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">ABC company</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">You've captured some network traffic...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=abc"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">HackersAttack</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">The webserver is under attack...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=hackersattack"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-danger h-100">
+              <div class="card-body">
+                <h5 class="card-title">DoS'ed out</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i> Advanced
+                </h6>
+                <p class="card-text">The webserver is under attack...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=dosed_out"
+                class="btn btn-danger btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">OSINT</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Kidnapped part 1</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  A 6-year-old child has been reported missing...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=kidnapped_part_1"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Kidnapped part 2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">Can you find the kidnapper's flight...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=kidnapped_part_2"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">Missing friend</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">Can you find my missing friend?</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=missing_friend"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">Reverse Engineering</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Love letter</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  A student has encrypted a secret message to send to their
+                  girlfriend...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=loveletter"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <!--<div class="col-sm-4">
+						<div class="card border-danger h-100">
+						  <div class="card-body">
+							<h5 class="card-title">All your base</h5>
+							<h6 class="card-subtitle mb-2 text-muted"><i class="bi bi-lock-fill"></i> <i class="bi bi-lock-fill"></i> <i class="bi bi-lock-fill"></i> Advanced</h6>
+							<p class="card-text">Can you find the access code?</p>
+						  </div>
+						  <a href="?page=challenges&challenge=allyourbase" class="btn btn-danger btn-sm">Try it out!</a>
+						</div>
+					</div>-->
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">Steganography</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Head in the clouds</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  Day dreaming and looking at the clouds...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=headintheclouds"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Matchy matchy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  Apparently there's a hidden message inside...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=matchymatchy"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">The guy</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">Exif? Never heard of her...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=theguy"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+
+        <h3 class="mt-4">Web exploits</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Bite my shiny metal...</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">
+                  Bender's programming is malfunctioning...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=bite_my_shiny_metal"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-success h-100">
+              <div class="card-body">
+                <h5 class="card-title">Lamb Source 1</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i> <i class="bi bi-lock"></i>
+                  <i class="bi bi-lock"></i> Beginner
+                </h6>
+                <p class="card-text">Can you help Chef Ramsay...</p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=lamb_source1"
+                class="btn btn-success btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-warning h-100">
+              <div class="card-body">
+                <h5 class="card-title">Mr Robot</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock-fill"></i>
+                  <i class="bi bi-lock"></i> Intermediate
+                </h6>
+                <p class="card-text">
+                  Can you find the directory containing the flag...
+                </p>
+              </div>
+              <a
+                href="?page=challenges&amp;challenge=mr_robot"
+                class="btn btn-warning btn-sm"
+                >Try it out!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--End card row-->
+      </div>
+      <!--End container-->
+    </main>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-12 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-muted"
+            >© PECAN+, some images created using
+            <a href="https://labs.openai.com/">DALL-E</a></span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer=""
+      src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"67868a90a94246549206d262484745b6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+    style="visibility: visible !important"
+  ></grammarly-desktop-integration>
+</html>
