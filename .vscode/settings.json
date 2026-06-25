@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Dark Modern",
+    "git.openRepositoryInParentFolders": "always",
+    "git.enableSmartCommit": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.confirmSync": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "editor.tabSize": 2,
+    "codeium.enableConfig": {
+        "*": true
+    },
+    "codeium.enableCodeLens": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "redhat.java",
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose"
+}
