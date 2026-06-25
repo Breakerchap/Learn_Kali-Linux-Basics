@@ -17,10 +17,6 @@ Think of a CTF like a school scavenger hunt mixed with logic puzzles:
 You are **not** breaking random real websites. You are solving legal practice
 puzzles designed for learning.
 
-If you want a quick intro video before starting:
-
-- [What Is a CTF? (YouTube)](https://www.youtube.com/watch?v=mb0taQQBlQY)
-
 > [!IMPORTANT]
 > Only attack the official practice challenges and your own machines.
 > See [Lesson 00](00-ethics-and-safety.md).

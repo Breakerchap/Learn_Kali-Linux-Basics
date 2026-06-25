@@ -1,8 +1,48 @@
 # Lesson 00 — Ethics & Safety
 
-Before touching any tool, read this. Cyber security skills are powerful. Using
-them the right way makes you a **defender**. Using them the wrong way is a
-**crime**.
+Before touching any tool, start with context: what this course is and why it
+matters.
+
+If you want a quick video intro before starting:
+
+- [What Is a CTF? (YouTube)](https://www.youtube.com/watch?v=mb0taQQBlQY)
+
+## What is cyber security?
+
+Cyber security is protecting computers, websites and data from being stolen,
+broken, or misused. In real life, this means things like:
+
+- finding weak passwords before attackers do,
+- fixing unsafe website code,
+- investigating suspicious files or network traffic.
+
+These are practical digital safety skills used by defenders in schools,
+businesses and government.
+
+## What is a CTF?
+
+CTF means **Capture The Flag**. It is a legal training game where you solve
+puzzles to find a hidden code (a flag), usually in a format like `pecan{...}`.
+
+- You are given a clue, file, or website challenge.
+- You investigate using tools.
+- You submit the flag and score points.
+
+Think of it like a digital escape room for problem-solving.
+
+## Why are you learning this?
+
+You are learning to think like a defender:
+
+- spot weaknesses safely,
+- understand how attacks work,
+- and protect systems in the real world.
+
+These skills can lead to competitions, certifications, and careers in IT or
+cyber security.
+
+Now the most important rule: cyber skills are powerful. Using them the right
+way makes you a **defender**. Using them the wrong way is a **crime**.
 
 ## The one golden rule
 
